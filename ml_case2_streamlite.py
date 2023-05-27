@@ -57,6 +57,6 @@ serum_sodium = st.number_input('serum_sodium:', min_value=100, max_value=200, va
 platelets =st.number_input('platelets:', min_value=1000, max_value=565000, value=10000)
 serum_creatinine =st.number_input('serum_creatinine:', min_value=0.1, max_value=10.0, value=1.0)
 
-if st.button('DEATH_EVENT'):
+if st.button('SUBMIT : Values'):
     death = predict(age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction, high_blood_pressure, platelets, serum_creatinine, serum_sodium,sex, smoking,time)
-    st.success(f'The predicted of heart Failur (1 Death, 0 not Death) ${death[0]:.2f}')
+    st.success(f'The predicted of heart Failur (1 Death, 0 not Death) : {death[0]:.2f}')
