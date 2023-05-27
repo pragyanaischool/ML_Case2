@@ -53,7 +53,7 @@ high_blood_pressure = st.number_input('high_blood_pressure:', min_value=0, max_v
 sex = st.radio('Gender:', ('Male', 'Female'))
 smoking = st.radio('Smoking :', ('Yes', 'No'))
 time = st.number_input('Time:', min_value=0.1, max_value=100.0, value=1.0)
-serum_sodium = st.number_input('serum_sodium:', min_value=100, max_value=200.0, value=100)
+serum_sodium = st.number_input('serum_sodium:', min_value=100, max_value=200, value=100)
 platelets =st.number_input('platelets:', min_value=1000, max_value=565000, value=10000)
 serum_creatinine =st.number_input('serum_creatinine:', min_value=0.1, max_value=10.0, value=1.0)
 
