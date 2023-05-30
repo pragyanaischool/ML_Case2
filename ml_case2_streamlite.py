@@ -41,7 +41,7 @@ def predict(age, anaemia, creatinine_phosphokinase, diabetes, ejection_fraction,
     return prediction
 
 
-st.title('Heart Failure Death Prediction: 0 No death, 1 Death')
+st.title('Heart Failure_Death_Prediction: 0 No death, 1 Death')
 st.image("""https://familydoctor.org/wp-content/uploads/2000/09/42187220_l.jpg""")
 st.header('Enter the characteristics of the Heart:')
 age = st.number_input('Age:', min_value=1, max_value=100, value=1)
